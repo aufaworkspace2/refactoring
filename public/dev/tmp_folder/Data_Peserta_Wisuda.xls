@@ -1,0 +1,23 @@
+
+			<table border='1'>
+				<thead>
+					<tr>
+						<th>No</th>
+						<th>NPM</th>
+						<th>Nama</th>
+						<th>Tempat Tanggal Lahir</th>
+						<th>Alamat</th>
+						<th>HP</th>
+						<th>Tanggal Mulai Bimbingan</th>
+						<th>Tanggal Selesai Bimbingan</th>
+						<th>Ukuran Toga</th>
+						<th>Judul Skripsi</th>
+						<th>NIDN Pembimbing</th>
+						<th>Nama Pembimbing</th>
+						<th>IPK</th>
+						<th>Tanggal Lulus</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		

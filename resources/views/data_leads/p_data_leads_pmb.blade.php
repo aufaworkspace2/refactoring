@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Data Leads PMB</title>
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 12px; }
+        h3 { text-align: center; margin-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #000; padding: 5px; text-align: left; }
+        th { background-color: #4CAF50; color: white; text-align: center; }
+        .no { text-align: center; width: 5%; }
+    </style>
+</head>
+<body>
+    <h3>DATA LEADS PMB</h3>
+    
+    <table>
+        <thead>
+            <tr>
+                <th class="no">No</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Telepon</th>
+                <th>Asal Sekolah</th>
+                <th>Tanggal Lahir</th>
+                <th>Jenis Kelamin</th>
+                <th>Status Mendaftar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @php $no = 1; @endphp
+            @foreach($query as $row)
+                @php $row = (object) $row; @endphp
+                <tr>
+                    <td class="no">{{ $no++ }}</td>
+                    <td>{{ $row->nama ?? '' }}</td>
+                    <td>{{ $row->email ?? '' }}</td>
+                    <td>{{ $row->telepon ?? '' }}</td>
+                    <td>{{ $row->asal_sekolah ?? '' }}</td>
+                    <td>{{ $row->tanggal_lahir ? date('d/m/Y', strtotime($row->tanggal_lahir)) : '' }}</td>
+                    <td>
+                        @if($row->jenis_kelamin == 'L')
+                            Laki-laki
+                        @elseif($row->jenis_kelamin == 'P')
+                            Perempuan
+                        @else
+                            -
+                        @endif
+                    </td>
+                    <td>{{ $row->MhswID ? 'Sudah Daftar' : 'Belum Daftar' }}</td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+</body>
+</html>

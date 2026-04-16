@@ -1,0 +1,1 @@
+@extends('layputs.template1')

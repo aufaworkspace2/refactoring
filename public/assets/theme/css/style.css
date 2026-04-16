@@ -1,0 +1,138 @@
+body{
+  padding:0;
+  margin:0;
+}
+.bg{
+  background: #2b2b2b url("http://ais.stembi.ac.id/assets/theme/img/bg_stembi.JPG");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+}
+.vid-container{
+  position:relative;
+  height:100vh;
+  overflow:hidden;
+}
+.bgvid.back {
+  position: fixed; right: 0; bottom: 0; z-index: -100;
+}
+.inner {
+  position: absolute;
+}
+.inner-container{
+  width:400px;
+  height:400px;
+  position:absolute;
+  top:calc(45vh - 200px);
+  left:calc(75vw - 200px);
+  overflow:hidden;
+}
+.bgvid.inner{
+  top:calc(-50vh + 200px);
+  left:calc(-50vw + 200px);
+  filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");
+  -webkit-filter:blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter:blur(10px);
+}
+.box{
+  position:absolute;
+  height:100%;
+  width:100%;
+  font-family:Helvetica;
+  color:#000;
+  background:#FFF;
+  padding:30px 0px;
+}
+.box h1{
+  text-align:center;
+  margin-top:10px;
+  font-size:30px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.box input{
+  display:block;
+  width:300px;
+  margin:20px auto;
+  padding:15px;
+  background:rgba(0,0,0,0.1);
+  color:#fff;
+  border:0;
+}
+.box input:focus,.box input:active,.box button:focus,.box button:active{
+  outline:none;
+}
+.box button{
+  background:#00A2EA;
+  border:0;
+  color:#FFF;
+  padding:10px;
+  font-size:20px;
+  width:330px;
+  margin:20px auto 10px auto;
+  display:block;
+  cursor:pointer;
+}
+.box button:hover{
+  background:#00A2EA;
+  color: #FFF;
+}
+.box p{
+  font-size:14px;
+  text-align:center;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0px;
+}
+.box p span{
+  cursor:pointer;
+  color:#666;
+}
+.box img{
+  width: 40%;
+  height: auto;
+}
+.quote p{
+  color: rgba(225, 225, 255, 0.13);
+  font-family: sans-serif;
+  font-size: 50px;
+  padding-left: 27%;
+  margin-top: 10px;
+  text-indent: -140px;
+}
+.quote span{
+  color: rgba(225, 225, 255, 0.13);
+  font-size: 50px;
+  font-family: sans-serif;
+}
+.footer{
+  padding: 0 0 0 15px;
+  font-family: sans-serif;
+  z-index: 1000;
+  bottom: 0;
+  position: absolute;
+  background-color: #000;
+  color: #FFF;
+  width: 100%;
+}
+.footer h4{
+  margin: 12px 0 10px 0;
+  width: auto;
+  box-shadow: 5px #000;
+}
+.footer p{
+  font-size: 12px;
+  margin: 5px 0 0 0;
+  width: auto;
+}
+p.right{
+  margin: -50px 30px 0 0;
+  float: right;
+}
+p.rightbuttom{
+  margin: -26px 30px 0 0;
+  float: right;
+}
+

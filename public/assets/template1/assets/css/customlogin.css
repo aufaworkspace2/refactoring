@@ -1,0 +1,65 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f6f7;
+    color: #000000;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+.right{
+    /* background: #1b3474;     */
+    height: 100vh;
+}
+/* .left{
+    padding: 85px;
+} */
+.form-control{
+    height: 50px;
+}
+.border-right-none{
+    border-right: none;
+}
+.border-left-none{
+    border-left: none;
+}
+span.input-group-text{
+    background: #ffffff;
+    border-left: none;
+    border-top-right-radius: .2rem !important;
+    border-bottom-right-radius: .2rem !important;
+    color: #bcc7cd;
+}
+.form-control.validate:focus{
+    border: none !important;
+}
+.btn-custom{
+    height: 50px;
+    background: #1b3474;
+    border: 1px solid #1b3474;
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 40%;
+    border-radius: 50px;
+}
+.btn-custom:hover{
+    background: #ffffff;
+    border: 1px solid #1b3474;
+    color: #1b3474;
+}
+.wording{
+    color: #8e8e8e;
+    text-transform: uppercase;
+}
+.hide img{
+    border-radius:20px;
+}
+@media (max-width: 720px) {
+    .hide {
+      display: none;
+    }
+    .left {
+        padding: 10px;
+        height: 100vh;
+    }
+}
